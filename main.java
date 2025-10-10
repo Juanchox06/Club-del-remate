@@ -1,5 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("hola doy el proyecto Club del remate");
+        System.out.println("hola soy el proyecto Club del remate");
     }
 }
