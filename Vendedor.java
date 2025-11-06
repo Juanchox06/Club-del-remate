@@ -30,6 +30,18 @@ public class vendedor extends Usuario {
         listaProductosVendedor.add(producto);
     }
     
+    public void venderProducto(Producto producto, Comprador comprador) {
+
+    this.dineroRecaudado += producto.getPrecioProducto();
+
+    this.totalVentas++;
+
+    comprador.agregarAHistorial(producto);
+
+    this.listaProductosVendedor.remove(producto);
+
+    System.out.println("¡Compra realizada con éxito!");
+}
 
 
 }

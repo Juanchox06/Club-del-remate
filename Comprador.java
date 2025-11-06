@@ -6,7 +6,9 @@ public class comprador extends Usuario {
         super(nombreUsuario, contraseña);
         this.HistorialCompras = new ArrayList<>();
     }
-
+    public void agregarHistorial(Producto productoComprado) {
+    this.HistorialCompras.add(productoComprado);
+}
    
     }
 }
